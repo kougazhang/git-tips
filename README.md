@@ -73,6 +73,7 @@ Git是一个 “分布式版本管理工具”，简单的理解版本管理工�
 * [修改上一个 commit 的描述](#修改上一个-commit-的描述)
 * [查看 commit 历史](#查看-commit-历史)
 * [展示简化的 commit 历史](#展示简化的-commit-历史)
+* [查看某文件commit历史](#查看某文件commit历史)
 
 ### 未归类
 
@@ -628,7 +629,14 @@ git checkout --orphan <branch-name>
 git show <branch-name>:<file-name>
 ```
 
+## 查看某文件commit历史
+
+```shell
+git show <commitID> <fileName>
+```
+
 ## clone 下来指定的单一分支
+
 ```sh
 git clone -b <branch-name> --single-branch https://github.com/user/repo.git
 ```
